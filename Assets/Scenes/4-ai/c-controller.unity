@@ -1286,7 +1286,7 @@ MonoBehaviour:
   radiusToWatch: 10
   probabilityToRotate: 0.2
   probabilityToStopRotating: 0.2
-  role: 3
+  role: 1
 --- !u!114 &1725965671
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1330,6 +1330,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 673462283}
+  rotationSpeed: 5
 --- !u!1 &1990222641
 GameObject:
   m_ObjectHideFlags: 0

@@ -7,6 +7,7 @@ public class Sabotager : MonoBehaviour
 {
     [SerializeField] Transform target;
     NavMeshAgent navMeshAgent;
+    [SerializeField] float rotationSpeed = 2f;
     // Start is called before the first frame update
     void Start()
     {
