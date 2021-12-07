@@ -1,30 +1,5 @@
-# Unity week 6: Three-dimensional scene-building and navigation
+Added AI to erels game!
 
-A project with step-by-step scenes illustrating how to construct a 3D game, including:
+Itch: https://g-r-s.itch.io/aihomework
 
-* Scene modelling with Terrain Tools and ProGrids;
-* Player control with CharacterController and NavMeshAgent;
-* Enemy AI;
-* Target visualization with gizmmos.
-
-Text explanations are available 
-[here](https://github.com/gamedev-at-ariel/gamedev-5782) in folder 08.
-
-## Cloning
-To clone the project, you may need to install git lfs first:
-
-    git lfs install 
-
-## Credits
-
-Programming:
-* Michael Lemberger
-* Erel Segal-Halevi
-
-Graphics:
-* [Sci-Fi Gun Light](https://assetstore.unity.com/packages/3d/props/guns/sci-fi-gun-light-87916)
-* [Sci-Fi Styled Modular Pack](https://assetstore.unity.com/packages/3d/environments/sci-fi/sci-fi-styled-modular-pack-82913)
-* [Toon Soldiers Demo](https://assetstore.unity.com/packages/3d/characters/toon-soldiers-demo-69684)
-
-Online course:
-* [Unity RPG](https://www.gamedev.tv/p/unity-rpg/?product_id=1503859&coupon_code=JOINUS).
+plush added a room to the scene with furniture made by ProBuilder!
