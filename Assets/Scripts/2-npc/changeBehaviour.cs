@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class changeBehaviour : MonoBehaviour
 {
-    [SerializeField] GameObject enemyToAffect;
-    [SerializeField] Type type;
-    enum Type
+    [SerializeField] GameObject enemyToAffect; //Who the change will apply to
+    [SerializeField] Type type; //the type of changes possible
+    enum Type 
     {
         chaser,brave,coward,sabotager
     }
@@ -21,8 +21,7 @@ public class changeBehaviour : MonoBehaviour
     {
         if(other.tag == "Player")
         {
-            Debug.Log("here");
-            enemyToAffect.GetComponent<EnemyController3>().role = (EnemyController3.Role)type;   
+            enemyToAffect.GetComponent<EnemyController3>().role = (EnemyController3.Role)type; //casting from this class's enum to the Controller's Enum 
         }
     }
     // Update is called once per frame
