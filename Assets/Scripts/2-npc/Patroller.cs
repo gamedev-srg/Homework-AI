@@ -31,7 +31,7 @@ public class Patroller: MonoBehaviour {
 
 
     public void changeMode(int mode)
-    {
+    { //setting patrol mode
         this.mode = mode;
     }
     private void Start() {
@@ -39,7 +39,7 @@ public class Patroller: MonoBehaviour {
         animator = GetComponent<Animator>();
         allTargets = targetFolder.GetComponentsInChildren<Target>(false); // false = get components in active children only
         currentTarget = allTargets[Random.Range(0, allTargets.Length - 1)];
-        Debug.Log("Found " + allTargets.Length + " active targets.");
+        //Debug.Log("Found " + allTargets.Length + " active targets.");
         SelectNewTarget(mode);
     }
 
@@ -47,7 +47,7 @@ public class Patroller: MonoBehaviour {
     {
         switch (mode)
         {
-            case 1:
+            case 1: //1 is brave in the Enum class
                 //find the closet target to the player and go there.
                 float min_distance = float.MaxValue;
                 foreach (Target target in allTargets)
@@ -63,8 +63,8 @@ public class Patroller: MonoBehaviour {
                 FaceDestination();
                 break;
 
-            case 2:
-                //find the farther target
+            case 2: //2 is coward
+                //find the farthest target from the player and go there.
                 float max_distance = float.MinValue;
                 foreach (Target target in allTargets)
                 {
@@ -79,7 +79,7 @@ public class Patroller: MonoBehaviour {
                 FaceDestination();
                 break;
 
-            default:
+            default: //simple patroller default
                 currentTarget = allTargets[Random.Range(0, allTargets.Length - 1)];
                 Debug.Log("New target: " + currentTarget.name);
                 navMeshAgent.SetDestination(currentTarget.transform.position);
