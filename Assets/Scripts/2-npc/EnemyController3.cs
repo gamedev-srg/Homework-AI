@@ -21,7 +21,7 @@ public class EnemyController3: MonoBehaviour {
     
     private void Chase() {
         chaser.enabled = true;
-        patroller.enabled = rotator.enabled = false;
+        patroller.enabled = rotator.enabled = sabotager.enabled =false;
     }
 
     private void Patrol(int mode) {
